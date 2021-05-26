@@ -1,0 +1,67 @@
+.container {
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    padding: 150px;
+}
+
+form {
+    position: absolute;
+    width: 409px;
+    height: 492px;
+    padding: 18px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 17px;
+}
+
+.card-body {
+    position: absolute;
+    width: 437px;
+    height: 524px;
+    background: #667EEA;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+}
+
+input {
+    position: relative;
+    width: 354px;
+    height: 48px;
+    background: #EDF2F7;
+    border-radius: 15px;
+}
+
+.text {
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.titre {
+    position: relative;
+    width: 90px;
+    height: 20px;
+    left: 130px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #667EEA;
+}
+
+button {
+    position: relative;
+    width: 354px;
+    height: 48px;
+    background: #667EEA;
+    border-radius: 15px;
+}

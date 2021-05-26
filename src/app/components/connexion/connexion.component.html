@@ -1,0 +1,38 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center">
+
+                <div class="card-body">
+                    <div *ngIf="Loading" class="spinner-border " role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <span *ngIf="submitted && creatUser.invalid" style="color:red">Tous les champs sont obligatoire</span>
+                    <form class="mt-4" [formGroup]="creatUser" (ngSubmit)="signUpUser()">
+                        <img src="../../assets/img/user.png" style="width:150px;height: 150px;top: 0px;">
+                        <h5 class="titre">{{titre}}</h5>
+                        <h6 class="text">connectez-vous à votre compte</h6>
+                        <div class="form-group">
+                            <!-- <label for="email">compte google</label>-->
+                            <div id="google" class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <input type="email" class="form-control form-control-lg" formControlName="email" autocomplete="off" placeholder="pseudo ou email">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <i class="fad fa-user-circle"></i>
+                                <input type="password" class="form-control form-control-lg" formControlName="password" autocomplete="off" placeholder="Mot de passe">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-primary" type="submit" [disabled]="creatUser.invalid">Valider</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
